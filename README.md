@@ -3,7 +3,7 @@ orignal inspiration https://github.com/janbenklewski/sussydealz
 
 No spoilers :)
 
-made and arch version btw :))
+made an arch version btw :))
 
 do chmod +x the bash script
 
