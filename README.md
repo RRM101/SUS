@@ -3,7 +3,7 @@ orignal inspiration https://github.com/janbenklewski/sussydealz
 
 No spoilers :)
 
-right click the file and click properties and go into permisiions and check allow executiong file as a program or similar
+do chmod +x the bash script
 
 changed video :)))))))
 
