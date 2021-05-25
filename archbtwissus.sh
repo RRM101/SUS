@@ -1,9 +1,9 @@
 cd
-sudo pacman -Syu git
+sudo pacman -Sy --noconfirm git
 git clone https://github.com/RickRollMaster101/SUS.git
-sudo pacman -Syu vlc
+sudo pacman -Sy --noconfirm vlc
 cd SUS
 vlc 'SUS.mp4'
-nano lolsus.txt
+cat lolsus.txt
 cd ..
 rm -rf SUS
