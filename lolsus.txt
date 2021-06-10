@@ -1,9 +1,1 @@
-SUS 
-
-
-
-
-
-
-
-Ctrl + x to exit if you didnt know
+SUS
