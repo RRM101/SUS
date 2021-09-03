@@ -1,9 +1,9 @@
-cd
 sudo pacman -Sy --noconfirm git
-git clone https://github.com/RickRollMaster101/SUS.git
 sudo pacman -Sy --noconfirm vlc
+sudo pacman -Sy --noconfirm figlet
+git clone https://github.com/RickRollMaster101/SUS.git
 cd SUS
 vlc 'SUS.mp4'
-cat lolsus.txt
+figlet SUS
 cd ..
 rm -rf SUS
