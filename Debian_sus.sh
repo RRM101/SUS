@@ -1,9 +1,9 @@
-cd
-sudo apt install git
+sudo apt install git -y
+sudo apt install vlc -y
+sudo apt install figlet -y
 git clone https://github.com/RickRollMaster101/SUS.git
-sudo apt install vlc
 cd SUS
 vlc 'SUS.mp4'
-cat lolsus.txt
+figlet SUS
 cd ..
 rm -rf SUS
