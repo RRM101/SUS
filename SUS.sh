@@ -207,7 +207,7 @@ if [ $choice -eq 5 ]; then
         cd amogus
         wget https://i.redd.it/k9gfa8ez6dy61.png
         gsettings set org.gnome.desktop.background picture-uri file:///home/`whoami`/Hacked/k9gfa8ez6dy61.png
-        rm business-hacked.jpg
+        rm k9gfa8ez6dy61.png
     else
         sleep 0.3
         echo 'WHY TF U ARENT ON GNOME!?'
@@ -221,6 +221,41 @@ if [ $choice -eq 5 ]; then
     sleep 1
     clear
     figlet 'AMOGUS!!!!!!!'
+    git clone https://github.com/RickRollMaster101/SUS
+    cd SUS
+    mpv SUS2.mp3
+    sleep 1
+    clear
+    figlet 'Say hello to rickroll !'
+    mpv SUS3.mp4
+    cd ..
+    rm -rf SUS 0.2
+    sleep 0.3
+    clear
+    figlet 'Did you get scared?'
+    echo '1. Yes'
+    echo '2. No'
+    read -p 'Enter your choice: ' choice2
+    if [ $choice2 -eq 1 ]; then
+        clear
+        figlet 'HAHAHAA AMOGUS TAKE OVER UR PC AGAIN!'
+        echo '(jk)'
+        sleep 2
+        clear
+    fi
+    if [ $choice2 -eq 2 ]; then
+        clear
+        figlet 'Well done, sussy baka'
+        sleep 2
+        clear
+    fi
+fi
+
+if [ $choice -eq 6 ]; then
+    wget https://cdn.discordapp.com/attachments/831824947385991179/911189829730058260/ba.sh  # script by @agam778
+    chmod +x ba.sh
+    bash ba.sh
+    rm ba.sh
 fi
 
 exit 0
