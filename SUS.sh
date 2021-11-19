@@ -206,8 +206,7 @@ if [ $choice -eq 5 ]; then
         mkdir amogus
         cd amogus
         wget https://i.redd.it/k9gfa8ez6dy61.png
-        gsettings set org.gnome.desktop.background picture-uri file:///home/`whoami`/Hacked/k9gfa8ez6dy61.png
-        rm k9gfa8ez6dy61.png
+        gsettings set org.gnome.desktop.background picture-uri file:///home/`whoami`/amogus/k9gfa8ez6dy61.png
     else
         sleep 0.3
         echo 'WHY TF U ARENT ON GNOME!?'
@@ -238,7 +237,7 @@ if [ $choice -eq 5 ]; then
     read -p 'Enter your choice: ' choice2
     if [ $choice2 -eq 1 ]; then
         clear
-        figlet 'HAHAHAA AMOGUS TAKE OVER UR PC AGAIN!'
+        figlet 'HAHAHAA AMOGUS WILL TAKE OVER UR PC AGAIN!'
         echo '(jk)'
         sleep 2
         clear
