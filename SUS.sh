@@ -251,10 +251,180 @@ if [ $choice -eq 5 ]; then
 fi
 
 if [ $choice -eq 6 ]; then
-    wget https://cdn.discordapp.com/attachments/831824947385991179/911189829730058260/ba.sh  # script by @agam778
-    chmod +x ba.sh
-    bash ba.sh
-    rm ba.sh
+# script by agam778#9486
+echo "LMFAO YOU HAVE STARTED THE HECKING SCRIPT!!!!!!!!!!!!!!!!!!!!!!!!"
+
+if [ ! -f /usr/bin/git ]; then
+    if [ -f /etc/debian_version ]; then
+        sudo apt-get install git
+        elif [ -f /etc/redhat-release ]; then
+        sudo yum install git
+        elif [ -f /etc/arch-release ]; then
+        sudo pacman -Sy --noconfirm git
+        elif [ -f /etc/gentoo-release ]; then
+        sudo emerge git
+        elif [ -f /etc/SuSE-release ]; then
+        sudo zypper install git
+        elif [ -f /etc/fedora-release ]; then
+        sudo dnf install git
+        elif [ -f /etc/centos-release ]; then
+        sudo yum install git
+        elif [ -f /etc/nixos ]; then
+        sudo nix-env -iA git
+    fi
+fi
+
+if [ ! -f /usr/bin/figlet ]; then
+    if [ -f /etc/debian_version ]; then
+        sudo apt-get install -y figlet
+        elif [ -f /etc/redhat-release ]; then
+        sudo yum install figlet
+        elif [ -f /etc/arch-release ]; then
+        sudo pacman -Sy --noconfirm figlet
+        elif [ -f /etc/gentoo-release ]; then
+        sudo emerge figlet
+        elif [ -f /etc/SuSE-release ]; then
+        sudo zypper install figlet
+        elif [ -f /etc/fedora-release ]; then
+        sudo dnf install figlet
+        elif [ -f /etc/centos-release ]; then
+        sudo yum install figlet
+        elif [ -f /etc/nixos ]; then
+        sudo nix-env -iA figlet
+    fi
+fi
+
+if [ ! -f /usr/bin/curl ]; then
+    if [ -f /etc/debian_version ]; then
+        sudo apt-get install curl -y
+        elif [ -f /etc/redhat-release ]; then
+        sudo yum install curl
+        elif [ -f /etc/arch-release ]; then
+        sudo pacman -Sy --noconfirm curl
+        elif [ -f /etc/gentoo-release ]; then
+        sudo emerge curl
+        elif [ -f /etc/SuSE-release ]; then
+        sudo zypper install curl
+        elif [ -f /etc/fedora-release ]; then
+        sudo dnf install curl
+        elif [ -f /etc/centos-release ]; then
+        sudo yum install curl
+        elif [ -f /etc/nixos ]; then
+        sudo nix-env -iA curl
+    fi
+fi
+
+if [ -f /usr/bin/gsettings ]; then
+    mkdir ~/Hacked
+    cd ~/Hacked
+    wget https://i.imgur.com/F0PE9xN.jpeg
+    gsettings set org.gnome.desktop.background picture-uri file:///home/`whoami`/Hacked/F0PE9xN.jpeg
+    clear
+fi
+if [ -f /usr/bin/kde-config ]; then
+    mkdir ~/Hacked
+    cd ~/Hacked
+    wget https://i.imgur.com/F0PE9xN.jpeg
+    kwriteconfig5 --file kdeglobals --group KBackgrounds --key BackgroundImage --type String file:///home/`whoami`/Hacked/F0PE9xN.jpeg
+    clear
+fi
+if [ -f /usr/bin/xfconf-query ]; then
+    mkdir ~/Hacked
+    cd ~/Hacked
+    wget https://i.imgur.com/F0PE9xN.jpeg
+    xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s /home/`whoami`/Hacked/F0PE9xN.jpeg
+    clear
+fi
+if [ -f /usr/bin/mate-about ]; then
+    mkdir ~/Hacked
+    cd ~/Hacked
+    wget https://i.imgur.com/F0PE9xN.jpeg
+    gsettings set org.mate.background picture-filename /home/`whoami`/Hacked/F0PE9xN.jpeg
+    clear
+fi
+if [ -f /usr/bin/cinnamon-settings ]; then
+    mkdir ~/Hacked
+    cd ~/Hacked
+    wget https://i.imgur.com/F0PE9xN.jpeg
+    gsettings set org.cinnamon.desktop.background picture-uri file:///home/`whoami`/Hacked/F0PE9xN.jpeg
+    clear
+fi
+if [ -f /usr/bin/pcmanfm ]; then
+    mkdir ~/Hacked
+    cd ~/Hacked
+    wget https://i.imgur.com/F0PE9xN.jpeg
+    pcmanfm --set-wallpaper=/home/`whoami`/Hacked/F0PE9xN.jpeg
+    clear
+fi
+
+MONITOR=$(xrandr | grep " connected" | cut -f1 -d " ")
+
+xrandr --output $MONITOR --brightness 0
+sleep 0.3
+
+clear
+figlet -f big "LMFAO"
+
+xrandr --output $MONITOR --brightness 3
+sleep 0.7
+
+xrandr --output $MONITOR --brightness 0
+sleep 0.3
+
+clear
+figlet -f big "GET HACKED"
+
+xrandr --output $MONITOR --brightness 2
+sleep 0.3
+
+clear
+figlet -f big "WOW SO SUS"
+
+xrandr --output $MONITOR --brightness 0.8
+sleep 0.7
+xrandr --output $MONITOR --brightness 0
+sleep 0.3
+
+clear
+figlet "YOU MUST BE SCARED"
+
+xrandr --output $MONITOR --brightness 1.7
+sleep 0.
+xrandr --output $MONITOR --brightness 0
+
+clear
+figlet -f big "HAHA DIE"
+
+
+sleep 0.3
+xrandr --output $MONITOR --brightness 5
+sleep 0.2
+xrandr --output $MONITOR --brightness 0.8
+sleep 0.2
+
+clear
+echo "Your IP Address is now being sent to the public"
+echo "Now its your time to DIE"
+echo "DIE LMFAO"
+sleep 5
+xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=true
+
+figlet -f big "BYE! ENJOY YOUR RICKROLL!"
+
+cd ~
+
+trap '' 2
+trap '' 1
+trap '' SIGINT
+trap '' SIGTSTP
+trap '' SIGQUIT
+trap '' SIGKILL
+trap '' SIGTERM
+trap '' SIGHUP
+trap '' SIGSTOP
+exit 0
+
+clear
 fi
 
 exit 0
