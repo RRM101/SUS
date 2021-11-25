@@ -4,6 +4,11 @@ if [ "$(uname)" == "MINGW32_NT-10.0" ]; then
     echo 'This shell script is not for windows'
 fi
 
+figlet 'Installing dependencies'
+echo '(if any)'
+sleep 1
+clear
+
 if [ "$(uname)" == "Darwin" ]; then
     brew install vlc
     brew install git
@@ -218,6 +223,9 @@ if [ $choice -eq 5 ]; then
     clear
     figlet 'HAHHAHAAAA GET REKT'
     sleep 1
+    clear
+    figlet 'AMOGOS HAS BEEN INSTALLED ON YOUR PC!'
+    sleep 2
     clear
     figlet 'AMOGUS!!!!!!!'
     git clone --depth=1 https://github.com/RickRollMaster101/SUS
