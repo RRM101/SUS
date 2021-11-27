@@ -242,7 +242,7 @@ if [ $choice -eq 5 ]; then
     sleep 0.5
     mpv SUS3.mp4
     cd ..
-    rm -rf SUS 0.2
+    rm -rf SUS
     sleep 0.3
     clear
     figlet 'Did you get scared?'
@@ -265,7 +265,7 @@ if [ $choice -eq 5 ]; then
 fi
 
 if [ $choice -eq 6 ]; then
-    # script by agam778#9486
+    # this part of the script by agam778#9486
     echo "LMFAO YOU HAVE STARTED THE HECKING SCRIPT!!!!!!!!!!!!!!!!!!!!!!!!"
     
     if [ ! -f /usr/bin/git ]; then
