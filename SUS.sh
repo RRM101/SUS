@@ -208,10 +208,15 @@ if [ $choice -eq 5 ]; then
     sleep 1
     if [ -f /usr/bin/gsettings ]; then
         cd ~
-        mkdir amogus
-        cd amogus
-        wget https://i.redd.it/k9gfa8ez6dy61.png
-        gsettings set org.gnome.desktop.background picture-uri file:///home/`whoami`/amogus/k9gfa8ez6dy61.png
+        if [ -f ~/amogus/k9gfa8ez6dy61.png ]; then
+            cd amogus
+            gsettings set org.gnome.desktop.background picture-uri file:///home/`whoami`/amogus/k9gfa8ez6dy61.png
+        else
+            mkdir amogus
+            cd amogus
+            wget https://i.redd.it/k9gfa8ez6dy61.png
+            gsettings set org.gnome.desktop.background picture-uri file:///home/`whoami`/amogus/k9gfa8ez6dy61.png
+        fi
     else
         sleep 0.3
         echo 'WHY TF U ARENT ON GNOME!?'
@@ -234,6 +239,7 @@ if [ $choice -eq 5 ]; then
     sleep 1
     clear
     figlet 'Say hello to rickroll !'
+    sleep 0.5
     mpv SUS3.mp4
     cd ..
     rm -rf SUS 0.2
