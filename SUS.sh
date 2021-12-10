@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$(uname)" == "MINGW32_NT-10.0" ]; then
+if [ -f /c/ ]; then
     echo 'This shell script is not for windows'
 fi
 
