@@ -229,6 +229,7 @@ if [ $choice -eq 5 ]; then
     figlet 'HAHHAHAAAA GET REKT'
     sleep 1
     clear
+    notify-send 'amogOS has been installed on your computer restart to use it'
     figlet 'AMOGOS HAS BEEN INSTALLED ON YOUR PC!'
     sleep 2
     clear
