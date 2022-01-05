@@ -57,7 +57,7 @@ class SusWindow(QMainWindow):
             os.system('sh SUS4py.sh')
         else:
             print('SUS4py.sh not found')
-            print('Downloading SUS.sh from Github')
+            print('Downloading SUS4py.sh from Github')
             os.system('wget https://raw.githubusercontent.com/RickRollMaster101/SUS/main/SUS4py.sh')
             os.system('sh SUS4py.sh')
 
