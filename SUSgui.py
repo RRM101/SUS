@@ -54,12 +54,12 @@ class SusWindow(QMainWindow):
         os.system('clear')
         notification('Running SUS script', app_name='SUS script GUI')
         if os.path.exists('SUS.sh') == True:
-            os.system('sh SUS.sh')
+            os.system('sh SUS4py.sh')
         else:
             print('SUS.sh not found')
             print('Downloading SUS.sh from Github')
-            os.system('wget https://raw.githubusercontent.com/RickRollMaster101/SUS/main/SUS.sh')
-            os.system('sh SUS.sh')
+            os.system('wget https://raw.githubusercontent.com/RickRollMaster101/SUS/main/SUS4py.sh')
+            os.system('sh SUS4py.sh')
 
     def click3(self):
         if os.path.exists('SUS/') == True:
