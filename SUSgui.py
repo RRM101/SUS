@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QIcon
 import sys
 import os
 from notify import notification
@@ -15,6 +15,7 @@ class SusWindow(QMainWindow):
     def __init__(self):
         super(SusWindow, self).__init__()
         self.setWindowTitle('SUS script GUI')
+        self.setWindowIcon(QIcon('./assets/suslogo.png'))
         self.setGeometry(500, 500, 500, 300)
         self.initUI()
 
